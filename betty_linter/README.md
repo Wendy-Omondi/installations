@@ -1,11 +1,11 @@
 # Betty **Linter**
 
 To run the Betty linter just with command `betty <filename>`:
-*Go to the [Betty](https://github.com/holbertonschool/Betty) repository
-*Clone the [repo](9https://github.com/holbertonschool/Betty) to your local machine
-*`cd` into the Betty directory
-*Install the linter with `sudo ./install.sh`
-*`emacs` or `vi` a new file called `betty`, and copy the script below:
+* Go to the [Betty](https://github.com/holbertonschool/Betty) repository
+* Clone the [repo](https://github.com/holbertonschool/Betty) to your local machine
+* `cd` into the Betty directory
+* Install the linter with `sudo ./install.sh`
+* `emacs` or `vi` a new file called `betty`, and copy the script below:
 
 ```
 #!/bin/bash
@@ -29,7 +29,7 @@ for argument in "$@" ; do
     ${BIN_PATH}/${BETTY_DOC} "$argument"
 done
 ```
-*Once saved, exit file and change permissions to apply to all users with `chmod a+x betty`
-*Move the `betty` file into `/bin/` directory or somewhere else in your `$PATH` with `sudo mv betty /bin/`
+* Once saved, exit file and change permissions to apply to all users with `chmod a+x betty`
+* Move the `betty` file into `/bin/` directory or somewhere else in your `$PATH` with `sudo mv betty /bin/`
 
 You can now type `betty <filename>` to run the Betty linter!
