@@ -35,9 +35,19 @@ Bye
 $
 ```
 
-f you have some issues to upgrade to 5.7, don’t hesitate to cleanup your server of any MySQL packages:
+if you have some issues to upgrade to 5.7, don’t hesitate to cleanup your server of any MySQL packages:
 ```
 sudo apt-get remove --purge mysql-server mysql-client mysql-common
+```
+
+If you had before `MySQL 5.5` installed, please run these 2 commands after the installation of the `version 5.7`:
+
+```
+$ mysql_upgrade -u root -p
+Password: 
+$ sudo service mysql restart
+```
+
 ```
 **Start Mysql**
 
@@ -46,4 +56,24 @@ $ service mysql start
 $
 $ mysql -uroot -p
 Enter password:
+```
+
+## **How to import a SQL dump**
+```
+$ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
+Enter password: 
+$ curl "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql" -s | mysql -uroot -p hbtn_0d_tvshows
+Enter password: 
+$ echo "SELECT * FROM tv_genres" | mysql -uroot -p hbtn_0d_tvshows
+Enter password: 
+id  name
+1   Drama
+2   Mystery
+3   Adventure
+4   Fantasy
+5   Comedy
+6   Crime
+7   Suspense
+8   Thriller
+$
 ```
