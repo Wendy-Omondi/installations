@@ -6,7 +6,7 @@
 
 `$ sudo apt-get install python3-pip`
 
-## **Install `Pep8`**
+**Install `Pep8`**
 
 ```
 $ sudo apt-get install python3-pep8
