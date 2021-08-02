@@ -48,9 +48,8 @@ Password:
 $ sudo service mysql restart
 ```
 
-```
 **Start Mysql**
-
+```
 $ service mysql start
  * MySQL Community Server 5.7.8-rc is started
 $
