@@ -1,4 +1,4 @@
-# **Install `git`**
+# **Install `git` (Linux)**
 
 If `git` is not already installed on your terminal:
 
